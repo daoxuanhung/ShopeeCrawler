@@ -48,10 +48,6 @@ namespace ShopeeCrawler
 			this.btnGetCategoryInfo = new System.Windows.Forms.Button();
 			this.proCurrentProcess = new System.Windows.Forms.ProgressBar();
 			this.gridViewData = new System.Windows.Forms.DataGridView();
-			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
 			this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Image = new System.Windows.Forms.DataGridViewImageColumn();
@@ -61,6 +57,10 @@ namespace ShopeeCrawler
 			this.OriginPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Sold = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -206,7 +206,7 @@ namespace ShopeeCrawler
 			// 
 			// btnGetImage
 			// 
-			this.btnGetImage.Location = new System.Drawing.Point(6, 276);
+			this.btnGetImage.Location = new System.Drawing.Point(6, 287);
 			this.btnGetImage.Name = "btnGetImage";
 			this.btnGetImage.Size = new System.Drawing.Size(56, 67);
 			this.btnGetImage.TabIndex = 1;
@@ -255,36 +255,6 @@ namespace ShopeeCrawler
 			this.gridViewData.RowTemplate.Height = 120;
 			this.gridViewData.Size = new System.Drawing.Size(1014, 523);
 			this.gridViewData.TabIndex = 4;
-			// 
-			// statusStrip1
-			// 
-			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel1});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 541);
-			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.statusStrip1.Size = new System.Drawing.Size(1318, 22);
-			this.statusStrip1.TabIndex = 5;
-			this.statusStrip1.Text = "statusStrip1";
-			// 
-			// toolStripStatusLabel2
-			// 
-			this.toolStripStatusLabel2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-			this.toolStripStatusLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.toolStripStatusLabel2.Size = new System.Drawing.Size(54, 17);
-			this.toolStripStatusLabel2.Text = "from Voz";
-			// 
-			// toolStripStatusLabel1
-			// 
-			this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.toolStripStatusLabel1.IsLink = true;
-			this.toolStripStatusLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-			this.toolStripStatusLabel1.Size = new System.Drawing.Size(77, 17);
-			this.toolStripStatusLabel1.Text = "vailozchimen";
-			this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
 			// 
 			// STT
 			// 
@@ -341,6 +311,36 @@ namespace ShopeeCrawler
 			this.Stock.HeaderText = "Tồn";
 			this.Stock.Name = "Stock";
 			this.Stock.ReadOnly = true;
+			// 
+			// statusStrip1
+			// 
+			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel1});
+			this.statusStrip1.Location = new System.Drawing.Point(0, 541);
+			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.statusStrip1.Size = new System.Drawing.Size(1318, 22);
+			this.statusStrip1.TabIndex = 5;
+			this.statusStrip1.Text = "statusStrip1";
+			// 
+			// toolStripStatusLabel2
+			// 
+			this.toolStripStatusLabel2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+			this.toolStripStatusLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.toolStripStatusLabel2.Size = new System.Drawing.Size(54, 17);
+			this.toolStripStatusLabel2.Text = "from Voz";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripStatusLabel1.IsLink = true;
+			this.toolStripStatusLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(77, 17);
+			this.toolStripStatusLabel1.Text = "vailozchimen";
+			this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
 			// 
 			// MainForm
 			// 
